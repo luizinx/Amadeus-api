@@ -21,4 +21,4 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-.client.json
+client.json
