@@ -29,18 +29,21 @@ export class AgentService {
     }
 
     const payload = {
-      eventId:      event.id,
+      eventId: event.id,
       email,
-      summary:      event.summary,
-      description:  event.description || null,
-      location:     event.location,
-      start:        event.start?.dateTime || event.start?.date,
-      end:          event.end?.dateTime || event.end?.date,
-      organizer:    event.organizer?.email,
-      attendees:    event.attendees?.map((a) => a.email) || [],
-      status:       event.status,
-      created:      event.created,
-      updated:      event.updated,
+      message: `Ola! Detectei um novo evento na sua agenda: "${event.summary}" em ${event.location}. Posso te ajudar com sugestoes para essa viagem!`,
+      evento: {
+        summary:     event.summary,
+        description: event.description || null,
+        location:    event.location,
+        start:       event.start?.dateTime || event.start?.date,
+        end:         event.end?.dateTime || event.end?.date,
+        organizer:   event.organizer?.email,
+        attendees:   event.attendees?.map((a) => a.email) || [],
+        status:      event.status,
+        created:     event.created,
+        updated:     event.updated,
+      },
     };
 
     this.logger.log(`[AGENTE] Enviando evento "${event.summary}" (${event.id}) de ${email} para o agente...`);
