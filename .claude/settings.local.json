@@ -4,7 +4,12 @@
       "Bash(npm init:*)",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(docker-compose down:*)",
+      "Bash(docker stop:*)",
+      "Bash(docker rm:*)",
+      "Bash(docker-compose:*)",
+      "Bash(curl:*)"
     ]
   }
 }
