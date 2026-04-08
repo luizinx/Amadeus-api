@@ -10,6 +10,9 @@
     "start:debug": "ts-node -r tsconfig-paths/register --inspect src/main.ts",
     "test": "echo \"No tests yet\""
   },
+  "engines": {
+    "node": ">=20"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luizinx/Amadeus-api.git"
@@ -41,14 +44,14 @@
     "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "typeorm": "^0.3.28"
+    "typeorm": "^0.3.28",
+    "typescript": "^5.4.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.18",
     "@types/node": "^25.5.2",
     "@types/passport-google-oauth20": "^2.0.17",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^6.0.2"
+    "tsconfig-paths": "^4.2.0"
   }
 }
