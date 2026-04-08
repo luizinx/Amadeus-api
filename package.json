@@ -1,0 +1,53 @@
+{
+  "name": "amadeus-api",
+  "version": "1.0.0",
+  "description": "> **Seu assistente inteligente de viagens pessoais**",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "start:dev": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:debug": "ts-node -r tsconfig-paths/register --inspect src/main.ts",
+    "test": "echo \"No tests yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizinx/Amadeus-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/luizinx/Amadeus-api/issues"
+  },
+  "homepage": "https://github.com/luizinx/Amadeus-api#readme",
+  "dependencies": {
+    "@nestjs/common": "^11.1.18",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.1.18",
+    "@nestjs/jwt": "^11.0.2",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-express": "^11.1.18",
+    "@nestjs/typeorm": "^11.0.1",
+    "@types/passport-jwt": "^4.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "googleapis": "^171.4.0",
+    "mysql2": "^3.20.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.18",
+    "@types/node": "^25.5.2",
+    "@types/passport-google-oauth20": "^2.0.17",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^6.0.2"
+  }
+}
